@@ -1,4 +1,4 @@
 
 public class Test {
-	System.out.print("Salut Dom");
+	System.out.println("Salut Dom");
 }
