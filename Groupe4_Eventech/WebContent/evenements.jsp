@@ -83,7 +83,7 @@
 					out.print("<tr><td><div class='grow'>");
 					out.print("<a href='" + ListeEvent.get(i).getUrl() + "'>" + 
 	//	"<img src='images/" + ListeEvent.get(i).getImage() + "'/>" + "</a>");
-		"<img src='C:\\Users\\Dominick\\Desktop\\PLAN DU STAGE\\" + ListeEvent.get(i).getImage() + "'/>" + "</a>");
+		"<img src='images/" + ListeEvent.get(i).getImage() + "'/>" + "</a>");
 				    out.print("</div></td></tr>");
 				    out.print("<tr><td>");
   		      			out.print(ListeEvent.get(i).getNomEvent());
