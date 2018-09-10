@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+#conteneur
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+}
+
+#bandeau
+{
+  color: purple;
+}
+
+img
+{
+  width: 15vw;
+  height: 15vw;
+}
+
+.grow:hover
+{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+table
+{
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 25px;
+}
+
+tr
+{
+  text-align: center;
+}
