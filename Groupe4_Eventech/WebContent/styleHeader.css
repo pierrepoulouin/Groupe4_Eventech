@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5f4b8b;
+    align-items: center;
+    color: white;
+}
+body {
+    margin: 0;
+}
+
+a {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+img
+{
+  width: 5vw;
+  height: 5vw;
+  padding-top: 0,5em;
+}
