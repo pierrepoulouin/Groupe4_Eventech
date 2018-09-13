@@ -3,18 +3,13 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Nos Evenements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
   </head>
   <body>
     <HR>
-    <jsp:include page="header.html"></jsp:include>
-	</br>
-	<div style="display: flex;">
-      <div><h3><a href=connecter.jsp>connexion</a></h3></div> &nbsp;&nbsp;
-	  <div><h3><a href=inscrire.jsp>s'inscrire</a></h3></div> &nbsp;&nbsp;
-	  <div><h3><a href=evenements.jsp>nos évènements</a></h3></div>
-	</div>
-  	</br>
+  	<jsp:include page="headerAccueil.html"></jsp:include>
+	<jsp:include page="evenements.jsp"></jsp:include>
   	<jsp:include page="footer.html"></jsp:include>
     <HR>
   </body>
