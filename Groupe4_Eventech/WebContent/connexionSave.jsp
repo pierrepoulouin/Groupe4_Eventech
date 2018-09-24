@@ -4,9 +4,12 @@
  
  <%
  	try {
+ 		
+ 		//Permet de recuperer les données du formulaire
             String mail = request.getParameter("email");
             String password = request.getParameter("password");
 
+            //charge le driveur pour la connexion à la base de donnée MySQL
             Class.forName("com.mysql.jdbc.Driver");
             
             String url = "jdbc:mysql://localhost/eventech";
@@ -15,19 +18,23 @@
             
             Connection con=DriverManager.getConnection(url, user, pwd);
             
+            // Statement qui permettra d'executer la requete SQL
             Statement st = (Statement) con.createStatement();
             
+            // On stock la requete SQL dans la variable sql
             String sql =	"SELECT * FROM utilisateurs " + 
             				"WHERE mailUtilisateur = '" + mail + "'" +
             				" AND mdpUtilisateur = '" + password + "'";
             
+            //On l'affiche dans la console 
             System.out.println("SQL : " + sql);
             
+            //On crée un objet result de la classe ResultSet 
 			ResultSet result = (ResultSet) st.executeQuery(sql);
 			
 			while (result.next())
 			{
-				// creation d'une instance nommee l de la classe LivresModel
+				// creation d'une instance nommee l de la classe UtilModel
 				UtilModel e = new UtilModel();
 
 	    		e.setMailUtilisateur(result.getString("mailUtilisateur"));
