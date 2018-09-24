@@ -1,74 +1,5 @@
 @charset "ISO-8859-1";
 
-h1
-{
-  color: #5F4B8B;
-  font-family: 'Rajdhani', sans-serif;
-}
-
-h3
-{
-  color: white;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.5em;
-}
-
-#conteneur
-{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: auto;
-}
-
-#searchbar
-{
-  margin-left: 40vw;
-  position: relative;
-  width: 100vw;
-  height: auto;
-  display: inline-block;
-}
-
-#searchbar .text
-{
-  width: 20vw;
-  float: left;    
-}
-
-#searchbar .champ
-{
-  width: 20vw;
-  height: 29px;
-  float: left;
-  font-size: 25px;			/* taille du texte saisie dans le champ */
-}
-
-#searchbar .bouton
-{
-    width: 8vw;
-    height: 35px;
-    padding: 0;
-    border: 3px;
-    float: left;
-    font-family: 'Rajdhani', sans-serif;
-    text-align: center;
-    font-size: 2em;		/* taille du texte du bouton Rechercher */
-    background-color: #5F4B8B;
-    color: white;
-}
-
-a:link {
-    color: purple;
-    background-color: #5F4B8B;
-}
-
-img
-{
-  width: 15vw;
-  height: 15vw;
-}
-
 .grow:hover
 {
   -webkit-transform: scale(1.3);
@@ -76,15 +7,7 @@ img
   transform: scale(1.3);
 }
 
-table
+.text-inscrire
 {
-  border-width: 3px;
-  border-style: solid;
-  border-color: #5F4B8B;
-  margin: 25px;
-}
-
-tr
-{
-  text-align: center;
+  font-family: roboto,
 }
