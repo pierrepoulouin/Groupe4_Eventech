@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="">
+<meta name="author" content="">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -11,40 +13,48 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Page Connexion</title>
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="connexionStyle.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto"
+	rel="stylesheet">
 </head>
-<body>
-	<jsp:include page="header.html"></jsp:include>
+
+<body class="text-center">
 
 
-	<HR>
-	<div class="mx-auto" style="width: 200px;">
 
-		<form action="connexionSave.jsp">
+	<form action="ControllerConnexion" class="form-signin" method="post" onsubmit="return validate()">
+		<a href="accueil.jsp"><img class="mb-4" src="images/logoV2.4.png"
+			alt="" width="72" height="72"></a>
 
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label> <input
-					type="email" class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp" placeholder="Dupont@gmail.com"name="email"> <small
-					id="emailHelp" class="form-text text-muted" >Votre email ne sera pas divulgué </small>
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label> <input
-					type="password" class="form-control" id="exampleInputPassword1"
-					placeholder="Dupont59" name="password">
-			</div>
-			<div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me
-					out</label>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+		<h1 class="h3 mb-3 font-weight-normal">Identifiants</h1>
 
-		</form>
-	</div>
-	<HR>
+		<label for="inputEmail" class="sr-only">Adresse Mail</label> <input
+			type="email" id="inputEmail" class="form-control"
+			placeholder="Adresse Mail" required="" autofocus="" name="email">
+
+		<label for="inputPassword" class="sr-only">Mot de passe</label> <input
+			type="password" id="inputPassword" class="form-control"
+			placeholder="Mot de passe" required="" name="password">
+		<div class="checkbox mb-3">
+
+			<label> <input type="checkbox" value="remember-me">
+				Se souvenir de moi
+			</label>
+		</div>
+
+		<button class='btn btn-outline-dark' style='background-color: #9cd9b6'
+			type="submit">Se connecter</button>
+		<div class="google">
+			<jsp:include page="googleSign.html"></jsp:include>
+		</div>
+	</form>
 
 
-	<jsp:include page="footer.html"></jsp:include>
+
+
+
+
 
 	<HR>
 

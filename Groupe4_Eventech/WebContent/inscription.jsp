@@ -20,46 +20,70 @@
 
 
 
-	<div class="mx-auto" style="width: 200px;">
+	<br>
+	<br>
 
 		<form action="inscriptionSave.jsp">
-			<div class="form-group">
-				<label for="formGroupExampleInput">Adresse Mail</label> <input
-					type="text" class="form-control" id="formGroupExampleInput"
-					placeholder="Ex: Dupont@yahoo.fr" name="mailUtilisateur">
-			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput2">Mot de passe</label> <input
-					type="text" class="form-control" id="formGroupExampleInput2"
-					placeholder="Ex: DarkDominick59" name="mdpUtilisateur">
-			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput3">Nom</label> <input type="text"
-					class="form-control" id="formGroupExampleInput3"
-					placeholder="Ex: Dupond " name="nomUtilisateur">
-			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput4">Prenom</label> <input
-					type="text" class="form-control" id="formGroupExampleInput4"
-					placeholder="Ex: Henri" name="prenomUtilisateur">
-			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput5">Situation</label> <input
-					type="text" class="form-control" id="formGroupExampleInput5"
-					placeholder="Ex: Etudiant,formateur..." name="typeUtilisateur">
-			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput6">Telephone</label> <input
-					type="text" class="form-control" id="formGroupExampleInput6"
-					placeholder="Ex: 0600664488" name="telephone">
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">&nbsp;Adresse Email &nbsp;*&nbsp;:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Dupond@yahoo.fr" name="mailUtilisateur" required>
+    </div>
+  </div>
+  <br>
+			<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">&nbsp;Mot de passe &nbsp;*&nbsp;:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Dupond59" name="mdpUtilisateur" required>
+    </div>
+  </div>
+  <br>
+			<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">&nbsp;Nom &nbsp;*&nbsp;:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Dupond" name="nomUtilisateur" required>
+    </div>
+  </div>
+  <br>
+			<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">&nbsp;Prenom &nbsp;*&nbsp;:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Viktor" name="prenomUtilisateur" required>
+    </div>
+  </div>
+  <br>
+			<div class="form-group col-md-4">
+      <label for="inputState">Situation &nbsp;*&nbsp;:</label>
+      <select id="inputState" class="form-control" name="typeUtilisateur" required>
+        <option selected>Etudiant</option>
+        <option>Chômeur</option>
+        <option>Salarié(e)</option>
+      </select>
+    </div>
+    <br>
+			<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">&nbsp;Telephone&nbsp;:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-sm" id="colFormLabelSm" placeholder="0601020304" name="telephone">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input is-valid" type="checkbox" value="" id="validCheck3" required>
+      <label class="form-check-label" for="validCheck3">
+        J'accepte les termes et conditions.
+      </label>
+      
+    </div>
+  </div>
+			<button type="submit" class="btn btn-primary" style='background-color: #9cd9b6'>Envoyer</button>
 		</form>
-	</div>
+	
 	<HR>
 
 
-	<jsp:include page="footer.html"></jsp:include>
+	<jsp:include page="stickyFooter.html"></jsp:include>
 
 	<HR>
 
