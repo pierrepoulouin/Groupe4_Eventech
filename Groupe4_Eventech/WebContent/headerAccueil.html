@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<!--balise pour le responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- balise pour bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--lien vers la feuille de css-->
+	<link rel="stylesheet" type="text/css" href="styleHeader.css">
+	<!-- import de la police-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="styleHeader.css">
-<link href="https://fonts.googleapis.com/css?family=Rajdhani"
-	rel="stylesheet">
-<title>Le kiosque de la Tech</title>
+	<title>Le kiosque de la Tech</title>
 </head>
+
 <body>
-
-	<div id="navbar">
-		<div>
-			<img src="images/logo.png" alt="logo Eventech"
-				style="width: 5vw; height: 5vw;">
-		</div>
-		<div>
-			<a href="">Le kiosque de la Tech</a>
-		</div>
-		<div>
-			<a href="">Liste des &eacute;v&eacute;nements</a>
-		</div>
-		<div>
-			<a href="">Cr&eacute;er un &eacute;v&eacute;nement</a>
-		</div>
-		<div>
-			<a href="inscription.jsp">S&acute;inscrire</a> / <a
-				href="connexion.jsp">Se connecter</a>
-		</div>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-		crossorigin="anonymous"></script>
+	<nav class="navbar navbar-light text-white" style="background-color: #b69cd9;" id="police">
+	
+    	<div>
+    		<img src="images/logoV2.5.png" width="40" height="40" class="d-inline-block align-center" alt=""> Le kiosque de la Tech
+    	</div>
+    	<div>
+    		<a href="accueil.jsp" class="text-white">Accueil</a>
+    	</div>
+    	<div>
+    		<form class="form-inline">
+    			<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+    			<button type="button" class="btn btn-outline-light" style="background-color: #9cd9b6">Rechercher</button>
+  			</form>
+    	</div>
+    	<div>
+    		<a href="connexion.jsp" class="text-white">Cr&eacute;er un &eacute;v&eacute;nement</a>
+    	</div>
+    	<div>
+    		<a href="connexion.jsp" class="text-white">Se connecter</a> / <a href="inscription.jsp" class="text-white">S'inscrire</a>
+    	</div>
+	</nav>	
 </body>
 </html>
