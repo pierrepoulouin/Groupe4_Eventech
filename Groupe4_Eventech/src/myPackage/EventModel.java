@@ -12,6 +12,7 @@ public class EventModel {
 	Date dateFin;
 	Time horaireDebut;
 	Time horaireFin;
+	Time dureeEvent;
 	String descriptif;
 	String photo1;
 	String photo2;
@@ -76,6 +77,13 @@ public class EventModel {
 	}
 	public void setHoraireFin(Time horaireFin) {
 		this.horaireFin = horaireFin;
+	}
+	
+	public Time getDureeEvent() {
+		return dureeEvent;
+	}
+	public void setDureeEvent(Time dureeEvent) {
+		this.dureeEvent = dureeEvent;
 	}
 	public String getPhoto1() {
 		return photo1;
