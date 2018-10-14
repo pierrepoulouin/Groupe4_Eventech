@@ -1,9 +1,8 @@
 @charset "ISO-8859-1";
 
-.navbar {
-	
-	background-color: #b69cd9;
-}
-.toggler {
-	background-color: #b69cd9;
+#param-header-eventech
+{
+  background-color: #b69cd9;
+  font: 'Roboto', sans-serif;
+  color: white;
 }

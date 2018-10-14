@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>Groupe4_Eventech</display-name>
   <welcome-file-list>
     <welcome-file>accueil.jsp</welcome-file>
@@ -9,4 +9,35 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>accueil.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>NosEvenementsController</servlet-name>
+    <servlet-class>servlet.NosEvenementsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EvenementsController</servlet-name>
+    <servlet-class>servlet.EvenementsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InscriptionController</servlet-name>
+    <servlet-class>servlet.InscriptionController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EventController</servlet-name>
+    <servlet-class>servlet.EventController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ControllerConnexion</servlet-name>
+    <servlet-class>servlet.ControllerConnexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NosEvenementsController</servlet-name>
+    <url-pattern>/accueil.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EvenementsController</servlet-name>
+    <url-pattern>/accueilConnexion.jsp</url-pattern>
+  </servlet-mapping>
 </web-app>
+
+
+

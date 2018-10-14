@@ -4,12 +4,12 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>AccueilConnexion</title>
   </head>
   <body>
     <HR>
    	<jsp:include page="headerAccueil.jsp"></jsp:include>
-  	<jsp:include page="nosEvenements.jsp"></jsp:include>
+  	<jsp:include page="evenements.jsp"></jsp:include>
     <jsp:include page="footer.html"></jsp:include>
     <HR>
   </body>

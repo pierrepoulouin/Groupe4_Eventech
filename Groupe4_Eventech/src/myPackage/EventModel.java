@@ -3,51 +3,57 @@ package myPackage;
 import java.sql.Date;
 import java.sql.Time;
 
-public class EventModel {
-	int id_event;
-	String nomEvent;
-	String lieuEvent;
-	Date dateCreation;
-	Date dateDebut;
-	Date dateFin;
-	Time horaireDebut;
-	Time horaireFin;
-	Time dureeEvent;
-	String descriptif;
-	String photo1;
-	String photo2;
-	String photo3;
-	String image;
-	String url;
-	String refCreateur;
-
+public class EventModel
+{
+	private int id_event;
+	private String nomEvent;
+	private String lieuEvent;
+	private String typeEvent;
+	private int nbPlaces;
+	private Date dateCreation;
+	private Date dateDebut;
+	private Date dateFin;
+	private Time horaireDebut;
+	private Time horaireFin;
+	private Time dureeEvent;
+	private String descriptif;
+	private String photo1;
+	private String photo2;
+	private String photo3;
+	private String image;
+	private String url;
+	private String refCreateur;
+	
 	public int getId_event() {
 		return id_event;
 	}
 	public void setId_event(int id_event) {
 		this.id_event = id_event;
 	}
-
 	public String getNomEvent() {
 		return nomEvent;
 	}
 	public void setNomEvent(String nomEvent) {
 		this.nomEvent = nomEvent;
 	}
-
 	public String getLieuEvent() {
 		return lieuEvent;
 	}
 	public void setLieuEvent(String lieuEvent) {
 		this.lieuEvent = lieuEvent;
 	}
-	public String getDescriptif() {
-		return descriptif;
+	public String getTypeEvent() {
+		return typeEvent;
 	}
-	public void setDescriptif(String descriptif) {
-		this.descriptif = descriptif;
+	public void setTypeEvent(String typeEvent) {
+		this.typeEvent = typeEvent;
 	}
-
+	public int getNbPlaces() {
+		return nbPlaces;
+	}
+	public void setNbPlaces(int nbPlaces) {
+		this.nbPlaces = nbPlaces;
+	}
 	public Date getDateCreation() {
 		return dateCreation;
 	}
@@ -78,12 +84,17 @@ public class EventModel {
 	public void setHoraireFin(Time horaireFin) {
 		this.horaireFin = horaireFin;
 	}
-	
 	public Time getDureeEvent() {
 		return dureeEvent;
 	}
 	public void setDureeEvent(Time dureeEvent) {
 		this.dureeEvent = dureeEvent;
+	}
+	public String getDescriptif() {
+		return descriptif;
+	}
+	public void setDescriptif(String descriptif) {
+		this.descriptif = descriptif;
 	}
 	public String getPhoto1() {
 		return photo1;
@@ -100,7 +111,6 @@ public class EventModel {
 	public String getPhoto3() {
 		return photo3;
 	}
-
 	public void setPhoto3(String photo3) {
 		this.photo3 = photo3;
 	}
@@ -121,7 +131,5 @@ public class EventModel {
 	}
 	public void setRefCreateur(String refCreateur) {
 		this.refCreateur = refCreateur;
-	}
-
-
+	}	
 }
